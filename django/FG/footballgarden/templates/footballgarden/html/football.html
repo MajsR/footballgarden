@@ -1,0 +1,24 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Football Garden</title>
+    <link rel="stylesheet" href="{% static 'footballgarden/css/football.css' %}">
+    <link rel="icon" type="image/png" sizes="20x16" href="{% static 'footballgarden/img/logopng.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="navbar-wrapper">
+        <a class="navbar-container"><img src="{% static 'footballgarden/img/logopng.png' %}" class="navbar-logo"></a>
+    </div>
+    <div class="square">
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{% static 'footballgarden/js/script.js' %}"></script>
+</body>
+
+</html>

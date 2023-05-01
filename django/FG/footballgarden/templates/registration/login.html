@@ -1,0 +1,10 @@
+{% load static %}
+
+<h2>Formulaire de connexion</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p}}
+  <button type="submit">Log In</button>
+</form>
+
+<script src="{% static 'footballgarden/js/script.js' %}"></script>

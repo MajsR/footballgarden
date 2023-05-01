@@ -1,0 +1,43 @@
+{% load static%}
+{% load customtags%}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Football Garden</title>
+    <link rel="icon" type="image/png" sizes="20x16" href="{% static 'footballgarden/img/logopng.png'%}">
+    <link rel="stylesheet" href="{% static 'footballgarden/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'global.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="username">{{user.username}}</div>
+    {% comment %}
+        Toute cette partie est ignoré par le navigateur
+    {% include "./source.html" pour ajouter du code provenant d'un autre fichier html%}
+    {% endcomment %}
+    <div class="bg1">
+        <div class="container2">
+            <div id="electrique" class="section">
+                <div class="content">
+                    <a href="{%url 'football' %}" class="title">Football</a>
+                </div>
+                <div class="overlay"></div>
+            </div>
+
+            <div id="disponibles" class="section">
+                <div class="content">
+                    <a href="{%url 'sport' %}" class="title">Other Sport</a>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{% static 'footballgarden/js/script.js' %}"></script>
+</body>
+
+</html>

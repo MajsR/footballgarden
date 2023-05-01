@@ -1,0 +1,29 @@
+@import url("./color.css");
+
+.navbar-logo {
+    text-align: center;
+    width: auto;
+    height: 100px;
+    color: #fff;
+    border: black solid 1px;
+}
+
+.navbar-container {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-wrapper {
+    width: 100%;
+    /* ou une largeur appropriée */
+    text-align: center;
+    background-color: var(--main-color);
+}
+
+.square{
+    margin: 10px;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
